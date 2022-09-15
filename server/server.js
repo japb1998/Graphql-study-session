@@ -44,7 +44,7 @@ async function startApolloServer(typeDefs, resolvers) {
   await server.start();
   server.applyMiddleware({
     app,
-    path: '/graphql', // we add graphql here
+    path:'/graphql' //if you do not include the path key then defaul is "/"
   });
 
   // Modified server startup
